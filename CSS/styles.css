@@ -1,0 +1,321 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: black;
+}
+
+/* Estilos generales */
+
+body {
+    background-color: #F4DECb;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+h1, h2 {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: 'Suez One', serif;
+}
+
+section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    border-top: double;
+    padding-top: 15px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+ul li p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+li {
+    padding: 15px;
+    border-style: double;
+    border-radius: 15px;
+    width: 90%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+li>p:first-child {
+    font-family: 'Suez One', serif;
+}
+
+img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul li article {
+    background-color: #F4DECb;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+/* Menu de navegacion*/
+
+#menu {
+    display: none;
+}
+
+i {
+    color: black;
+    background: transparent;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu-hamburguesa-toggler {
+    margin-right: 10px;
+    margin-top: 10px;
+    display: block;
+    background: transparent;
+}
+
+#cerrar-menu-movil {
+    display: none;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Clases para js */
+
+.abierto {
+    overflow: hidden;
+    background-color: #94618e;
+}
+
+.abierto #abrir-menu-movil {
+    display: none;
+}
+
+.abierto #cerrar-menu-movil {
+    display: block;
+}
+
+.abierto #menu {
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.abierto #menu-hamburguesa-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.abierto nav {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.abierto li {
+    background-color: #F4DECb;
+}
+
+.opcion .oculto {
+    display: none;
+}
+
+/* Pagina de Inicio */
+
+#body-inicio {
+    background-color: #94618e;
+}
+
+#body-inicio section {
+    background-color: #F4DECb;
+    padding: 15px;
+    border-radius: 15px;
+    border-style: double;
+}
+
+#Inicio li {
+    background-color: #49274A;
+    color: #F4DECb;
+}
+
+iframe {
+    max-height: 50%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#PaginaAlicia:hover {
+    cursor: pointer;
+}
+
+#PaginaPorcia:hover {
+    cursor: pointer;
+}
+
+/* Pagina de porcia */
+
+.Oro {
+    background-color: #EABE3F;
+}
+
+.Plata {
+    background-color: #e3e4e5;
+}
+
+.Cobre {
+    background-color: #CB6D51;
+}
+
+.Bronce {
+    background-color: #cd7f32;
+}
+
+#Prueba5 p:nth-child(2), #Prueba5 p:nth-child(3) {
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+}
+
+/* Pagina de Alicia */
+
+li {
+    background-color: #94618e;
+}
+
+article p:nth-child(2) {
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: solid;
+}
+
+/* Media query para computadoras */
+
+@media (min-width: 992px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    li {
+        max-width: 25%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    /* Pagina de Inicio  */
+
+    #body-inicio section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    #body-inicio figure {
+        display: inline-block;
+        max-width: 30%;
+    }
+
+    #body-inicio section p {
+        display: inline-block;
+        width: 70%;
+        margin: 5px;
+        text-align: center;
+    }
+
+    #body-inicio section h2 {
+        max-width: 25%;
+    }
+
+    iframe {
+        margin: 0%;
+    }
+
+
+    
+    /* Pagina Alicia */
+    #body-alicia ul {
+        flex-wrap: wrap;
+    }
+    /* Menu */
+    #menu-hamburguesa-toggler {
+        display: none;
+    }
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100vw;
+        height: 15vh;
+        background-color: #F4DECb;
+        margin: 0%;
+        margin-bottom: 30px;
+        position: fixed;
+        top: 0;
+    }
+    #body-porcia #menu li {
+        background-color: #94618e;
+    }
+    #body-alicia #menu {
+        flex-wrap: nowrap;
+    }
+    #body-alicia #menu li {
+        background-color: #e3e4e5;
+    }
+    h1 {
+        margin-top: 20vh;
+    }
+}

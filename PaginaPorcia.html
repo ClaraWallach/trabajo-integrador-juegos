@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los cofres de Porcia</title>
+    <link rel="Stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Suez+One&display=swap" rel="stylesheet">
+    <script src="JS/juego.js"></script>
+    <script src="https://kit.fontawesome.com/5cd5f31fd8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="body-porcia">
+    <header>
+        <nav>
+            <button id="menu-hamburguesa-toggler">
+                <i class="fas fa-bars fa-3x" id="abrir-menu-movil"></i>
+                <i class="fas fa-times fa-3x" id="cerrar-menu-movil"></i>
+            </button>
+            <ul id="menu">
+                <li class="menu-item">
+                    <a href="Index.html">
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="PaginaPorcia.html">
+                        <p>Los cofres de Porcia</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="PaginaAlicia.html">
+                        <p>Alicia en el bosque del Olvido</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="Index.html#Recomendaciones">
+                        <p>Recomendaciones</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <h1>
+            Los cofres de Porcia
+        </h1>
+    </header>
+    <main>
+        <section>
+            <p>
+                Porcia es un personaje de “El mercader de Venecia”, escrita por Shakespeare. En un acto de la obra se
+                presenta una prueba a los pretendientes de Porcia: hay tres cofres, cada uno con una inscripción. En uno
+                de
+                los cofres hay un retrato de Porcia. Quien lo encuentre podrá casarse con ella.
+                En esta página hay distintitos desafíos con los cofres de Porcia. ¿Podes resolverlos?
+            </p>
+        </section>
+        <section id="Prueba1">
+            <p>
+                Prueba 1: Porcia toma tres cofres de distintos materiales y esconde su retrato en uno solo de ellos. Les
+                avisa que solo uno dice la verdad. ¿Dónde está el retrato?
+            </p>
+            <ul>
+                <li class="Oro opcion">
+                    <p>Oro</p>
+                    <p>El retrato esta en este cofre</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Plata opcion">
+                    <p>Plata</p>
+                    <p>El retrato no esta aqui</p>
+                    <article class="oculto">
+                        <p>Correcto! El retrato esta aqui</p>
+                        <figure>
+                            <img src="img/RetratoPorcia.jpg" alt="Retrato de porcia">
+                        </figure>
+                        <p>El de cobre dice la verdad, el de oro y el de plata mienten</p>
+                    </article>
+                </li>
+                <li class="Cobre opcion">
+                    <p>Cobre</p>
+                    <p>El retrato no esta en el cofre de oro</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="Prueba2">
+            <p> Prueba 2: Porcia les avisa que por lo menos uno de los tres enunciados es verdadero y por lo menos uno
+                es falso. ¿En dónde está el retrato?
+            </p>
+            <ul>
+                <li class="Oro opcion">
+                    <p>Oro</p>
+                    <p>El retrato no esta en el cofre de plata</p>
+                    <article class="oculto">
+                        <p>Correcto! El retrato esta aqui</p>
+                        <figure>
+                            <img src="img/RetratoPorcia.jpg" alt="Retrato de porcia">
+                        </figure>
+                        <p>El cofre de oro y el de plata dicen la verdad. El cofre de bronce miente</p>
+                    </article>
+                </li>
+                <li class="Plata opcion">
+                    <p>Plata</p>
+                    <p>El retrato no esta en este cofre</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Cobre opcion">
+                    <p>Cobre</p>
+                    <p>El retrato esta en este cofre</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="Prueba3">
+            <p>
+                Prueba 3: Porcia agrega un cofre y les avisa que solo uno dice la vedad. ¿Dónde está el retrato?
+            </p>
+            <ul>
+                <li class="Oro opcion">
+                    <p>Oro</p>
+                    <p>El retrato esta aqui</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Plata opcion">
+                    <p>Plata</p>
+                    <p>El retrato no esta aqui</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Cobre opcion">
+                    <p>Cobre</p>
+                    <p>El retrato esta en el de bronce</p>
+                    <article class="oculto">
+                        <p>Correcto! El retrato esta aca</p>
+                        <figure>
+                            <img src="img/RetratoPorcia.jpg" alt>
+                        </figure>
+                        <p>Ek de plata dice la verdad. El de oro, el de cobre y el de bronce mienten</p>
+                    </article>
+                </li>
+                <li class="Bronce opcion">
+                    <p>Bronce</p>
+                    <p>El de oro dice la verdad</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="Prueba4">
+            <p>
+                Prueba 4: Para esta prueba les avisa que solo uno miente. ¿Dónde está el retrato?
+            </p>
+            <ul>
+                <li class="Oro opcion">
+                    <p>Oro</p>
+                    <p>El retrato esta en un cofre</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Plata opcion">
+                    <p>Plata</p>
+                    <p>Este cofre esta vacio</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Cobre opcion">
+                    <p>Cobre</p>
+                    <p>El retrato no esta en el de bronce</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Bronce opcion">
+                    <p>Bronce</p>
+                    <p>El de plata dice la verdad</p>
+                    <article class="oculto">
+                        <p>Correcto! El retrato esta aca</p>
+                        <figure>
+                            <img src="img/RetratoPorcia.jpg" alt="Retrato de porcia">
+                        </figure>
+                        <p>El de oro, el de plata y el de bronce dicen la verdad. El de cobre miente</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="Prueba5">
+            <p>
+                Prueba 5: Porcia explica que hay un cofre con los dos enunciados verdaderos; uno con los dos falsos y
+                otro con un enunciado verdadero y uno falso. ¿Dónde está el retrato?
+            </p>
+            <ul>
+                <li class="Oro opcion">
+                    <p>Oro</p>
+                    <p>El retrato no esta aqui</p>
+                    <p>El retrato esta en el de plata</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Plata opcion">
+                    <p>Plata</p>
+                    <p>El retrato no esta en el cofre de oro</p>
+                    <P>El retrato esta en el cofre de cobre</P>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Cobre opcion">
+                    <p>Cobre</p>
+                    <p>El retrato no esta aqui</p>
+                    <p>El retrato es en el cofre de oro</p>
+                    <article class="oculto">
+                        <p>Correcto! El retrato esta aqui</p>
+                        <img src="img/RetratoPorcia.jpg" alt="Retrato de Porcia">
+                        <p>El primer enunciado del cofre de oro y los dos enunciados del cofre de plata dicen la verdad.
+                            El segundo enunciado del cofre de oro y los dos enunciados del cofre de cobre mienten. </p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="Prueba6">
+            <p>
+                Prueba 6: Porcia dice que el retrato está en el único que dice la verdad. ¿Dónde está el retrato?
+            </p>
+            <ul>
+                <li class="Oro opcion">
+                    <p>Oro</p>
+                    <p>El retrato esta aqui</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Plata opcion">
+                    <p>Plata</p>
+                    <p>El retrato no esta en el cofre de cobre</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Cobre opcion">
+                    <p>Cobre</p>
+                    <p>El de oro miente</p>
+                    <article class="oculto">
+                        <p>Correcto! El retrato esta aqui</p>
+                        <figure>
+                            <img src="img/RetratoPorcia.jpg" alt="Retrato de Porcia">
+                        </figure>
+                        <p>El de cobre dice la verdad. El cofre de oro, el de plata y el de bronce mienten</p>
+                    </article>
+                </li>
+                <li class="Bronce opcion">
+                    <p>Bronce</p>
+                    <p>El de plata dice la verdad</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="Prueba7">
+            <p>
+                Prueba 7: Porcia estaba un poco aburrida de hacer siempre lo mismo. Entonces, para la siguiente prueba,
+                puso una daga en uno de los cofres. Los pretendientes que lograban evitar la daga, pasaban a la
+                siguiente prueba. ¿En qué cofre seguro no está la daga?
+            </p>
+            <ul>
+                <li class="Oro opcion">
+                    <p>Oro</p>
+                    <p>La daga esta aqui</p>
+                    <article class="oculto">
+                        <p>No! En este cofre podria estar la daga</p>
+                    </article>
+                </li>
+                <li class="Plata opcion">
+                    <p>Plata</p>
+                    <p>Este cofre esta vacio</p>
+                    <article class="oculto">
+                        <p>No! En este cofre podria estar la daga</p>
+                    </article>
+                </li>
+                <li class="Cobre opcion">
+                    <p>Cobre</p>
+                    <p>Solo uno de estos cofres dice la verdad</p>
+                    <article class="oculto">
+                        <p>Correcto! En este cofre no esta la daga</p>
+                        <p>Para resolver esta prueba no sabemos cuantos cofres dicen la verdad y cuantos mienten.
+                            Dependerá si consideramos el enunciado del cofre de Cobre como verdadero o falso.
+
+                            Si lo consideramos como verdadero, la daga estará en el cofre de plata dado que el enunciado
+                            de oro y el de plata tendrán enunciados falsos.
+                            Si consideramos el cofre de bronce como falso tendremos dos opciones. El cofre de oro y el
+                            de plata son falsos, por lo tanto, la daga estará en el cofre de plata. El cofre de plata y
+                            el de oro dicen la verdad por lo tanto la daga estará en el de oro.
+
+                            La daga entonces nunca estará en el cofre de cobre.
+
+                        </p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="Prueba8">
+            <p>
+                Prueba 8: Porcia dice que solo uno miente. ¿Dónde está el retrato?
+            </p>
+            <ul>
+                <li class="Oro opcion">
+                    <p>Oro</p>
+                    <p>Este cofre esta vacio</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Plata opcion">
+                    <p>Plata</p>
+                    <p>El retrato esta en el de cobre</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+                <li class="Cobre opcion">
+                    <p>Cobre</p>
+                    <p>El de oro miente</p>
+                    <article class="oculto">
+                        <p>Correcto! El retrato esta aqui</p>
+                        <figure>
+                            <img src="img/RetratoPorcia.jpg" alt="Retrato de Porcia">
+                        </figure>
+                        <p>El cofre de oro, el de plata y el de cobre dicen la verdad. El cofre de bronce miente</p>
+                    </article>
+                </li>
+                <li class="Bronce opcion">
+                    <p>Bronce</p>
+                    <p>El de oro dice la verdad</p>
+                    <article class="oculto">
+                        <p>El retrato no esta aqui</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
